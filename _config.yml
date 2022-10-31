@@ -1,0 +1,24 @@
+lang: en-GB
+branch: master
+
+nav_pages:
+  - index.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      comments: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+theme: null
+repository: ab6459/coventry_theme
