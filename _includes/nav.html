@@ -26,23 +26,9 @@
 
 
 <ul class="navbar-nav">
-<!--    {% if not nav_item.children %}-->
     <li class="nav-item">
         <a href="{{ nav_page.url | relative_url }}" class="nav-link">
             {{ nav_page.title }}
         </a>
-<!--        <a class="nav-link active" aria-current="page" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>-->
     </li>
-<!--    {% else %}-->
-<!--    <li class="nav-item dropdown">-->
-<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ nav_item.title|length }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--            {{ nav_item.title }}-->
-<!--        </a>-->
-<!--        <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ nav_item.title|length }}">-->
-<!--            {% for child_item in nav_item.children %}-->
-<!--            <li><a class="dropdown-item" href="{{ child_item.url|url }}">{{ child_item.title }}</a></li>-->
-<!--            {% endfor %}-->
-<!--        </ul>-->
-<!--    </li>-->
-<!--    {% endif %}-->
 </ul>
