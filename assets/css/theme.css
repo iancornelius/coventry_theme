@@ -11,7 +11,7 @@ body {
 }
 
 .cov-logo {
-    background-image: url('../images/cov-logo.png');
+    background-image: url('assets/images/cov-logo.png');
     height: 54px;
     width: 192px;
 }
