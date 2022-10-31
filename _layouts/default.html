@@ -24,27 +24,28 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             {% for path in site.nav_pages %}
             {% assign nav_page=site.pages | where:"path",path | first %}
-                {% include nav.html %}
+                LINK!
+            <!--                {% include nav.html %}-->
             {% endfor %}
         </div>
     </div>
 </nav>
 </div>
 
-<div class="container">
-
-    {% if layout.hero %}
-    <div class="hero-unit rounded-top position-relative">&nbsp;</div>
-    {% endif %}
-
-    {% include nav.html %}
-
-    <div class="content" id="content" role="main">
-        {{ content }}
-    </div><!-- /.content -->
-
-    {% include_cached footer.html %}
-</div><!--/.container-->
+<!--<div class="container">-->
+<!---->
+<!--    {% if layout.hero %}-->
+<!--    <div class="hero-unit rounded-top position-relative">&nbsp;</div>-->
+<!--    {% endif %}-->
+<!---->
+<!--    {% include nav.html %}-->
+<!---->
+<!--    <div class="content" id="content" role="main">-->
+<!--        {{ content }}-->
+<!--    </div>&lt;!&ndash; /.content &ndash;&gt;-->
+<!---->
+<!--    {% include_cached footer.html %}-->
+<!--</div>&lt;!&ndash;/.container&ndash;&gt;-->
 
 </body>
 </html>
