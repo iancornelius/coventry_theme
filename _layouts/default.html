@@ -9,6 +9,28 @@
     {% endif %}
 </head>
 <body class="{{ page.layout }} post{{ page.id | slugify | prepend: "-"}} mt-2">
+
+<header class="container-fluid row p-0 m-0 mb-0 bg-cov-blue shadow" style="z-index: 1">
+    <div class="col-2 cov-logo m-3">&nbsp;</div>
+    <div class="col m-0 pb-2 d-flex align-items-center fw-bold fs-5 text-white text-truncate">
+        {{ site.title }}
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow" style="z-index: -1">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            {% for path in site.nav_pages %}
+            {% assign nav_page=site.pages | where:"path",path | first %}
+                {% include "nav.html" %}
+            {% endfor %}
+        </div>
+    </div>
+</nav>
+</div>
+
 <div class="container">
 
     {% if layout.hero %}
